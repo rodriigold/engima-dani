@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Dani Riddle</title>
+
+</head>
+<body>
+
+    <img src="imagens/esboco.png" alt="Arte">
+
+    <div class="riddleField">
+
+        <img src="imagens/clicker.png" alt="clikcer art">
+        <p>QUEM É O ARTISTA?</p>
+
+    </div>
+    
+    <div class="downField">
+
+        <div id="message" class="message"></div>
+        <button onclick="checkPassword()">RESPONDER</button>
+
+    </div>
+
+
+    <script>
+
+        function checkPassword()
+        {
+            const correctPassword = "Danilo";
+            const correctPassword2 = "danilo";
+            const correctPassword3 = "Dani";
+            const correctPassword4 = "dani";
+
+            const userInput = prompt("Digite a senha aqui");
+            const messageDiv = document.getElementById("message");
+
+            if(userInput === correctPassword || userInput === correctPassword2 || userInput === correctPassword3 || userInput === correctPassword4)
+            {
+                window.location.href = 'http://127.0.0.1:5500/voce.html';
+            }
+            else
+            {
+                messageDiv.textContent = "SENHA INCORRETA!";
+                setTimeout(() => {
+                    messageDiv.textContent = " ";
+                }, 750);
+            }
+        }
+
+    </script>
+
+</body>
+</html>
