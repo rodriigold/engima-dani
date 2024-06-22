@@ -16,7 +16,7 @@ html, body
 
 body
 {
-    background-color: black;
+    background-color: #1b1b1b;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,14 +32,14 @@ img
 {
     color: #ffffffb6;
     margin-top: 10px;
-    font-size: .7em;
-    font-weight: bold;
+    font-size: 1em;
     text-align: center;
 }
 
 #message
 {
     padding: 10px 10px 0 10px;
+    height: 20px;
     font-size: .65em;
     font-weight: bold;
     color: #ff8181;
@@ -48,7 +48,7 @@ img
 
 button
 {   
-    background-color: #000000;
+    background-color: #1b1b1b;
     color: #ffffff;
     border: 2px solid #ffffff;
 
@@ -66,5 +66,5 @@ button
 
 button:hover
 {
-    background-color: #161616;
+    background-color: rgb(37, 37, 37);
 }
